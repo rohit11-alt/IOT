@@ -36,23 +36,6 @@ const routePages: Record<string, string> = Object.fromEntries(
   Object.entries(pageRoutes).map(([page, path]) => [path, page])
 );
 
-function PlaceholderPage({ title }: { title: string }) {
-  return (
-    <div className="page-content">
-      <div className="page-heading">
-        <div>
-          <h1>{title}</h1>
-          <p>This section will be implemented in the next development stage.</p>
-        </div>
-      </div>
-
-      <section className="panel placeholder-panel">
-        <h3>{title}</h3>
-        <p>SentinelAI {title.toLowerCase()} interface coming next.</p>
-      </section>
-    </div>
-  );
-}
 
 function AppLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
